@@ -16,7 +16,7 @@ chmod +x bootstrap.sh
 
 `bootstrap.sh`:
 
-1. Creates a **kind** cluster from `cluster.yml`
+1. Creates a **kind** cluster from **`cluster.yml`** in the repository root (required by Task step 2)
 2. Creates namespaces `mysql` and `todoapp`
 3. Applies **`secret.yml`** (MySQL + app secrets) and **`configMap.yml`** (app + `init.sql` for MySQL)
 4. Applies **`statefulSet.yml`** — headless **Service** + **StatefulSet** (3 replicas)
